@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Login Form</title>
+</head>
+<body class="m-0 flex justify-center items-center h-screen bg-[url(./img/background_x1.png)]">
+    <form action="" class="backdrop-blur-sm bg-blue-950/10 border-2 border-slate-400 p-4 md:p-10 rounded-4xl shadow-lg flex flex-col items-center justify-center gap-8">
+        <div class="mb-5">
+            <h2 class="text-white text-5xl lg:text-7xl font-bold">Login</h2>
+        </div>
+        <div class="flex items-center justify-between w-full border-b-2 border-slate-600 p-2 ">
+            <input type="email" placeholder="Email" required class="text-white text-3xl lg:text-4xl focus:outline-none">
+            <img src="./img/email_40dp_FFFFFF.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between w-full border-b-2 border-slate-600 p-2">
+            <input type="password" id="password" placeholder="Password" required class="text-white text-3xl lg:text-4xl focus:outline-none">
+            <button type="button" id="togglePassword" class="w-10 cursor-pointer">
+                <img src="./img/visibility_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="opacity-50" id="eye">
+            </button>
+            <img src="./img/lock_40dp_FFFFFF.svg" alt="" class="ml-5">
+        </div>
+        <div class="flex items-center justify-between w-full -mt-4">
+            <div class="flex items-center gap-2">
+                <input type="checkbox" id="remember-me" class="cursor-pointer"> 
+                <p class="text-white text-lg">Remember me</p>
+            </div>
+            <div>
+                <p class="text-white text-lg">Forgot Password?</p>
+            </div>
+        </div>
+        <div class="w-full -mt-7">
+            <input type="submit" value="Login" class="bg-slate-100 text-3xl font-semibold p-3 rounded-full mt-5 w-full cursor-pointer hover:border-2 hover:border-slate-100 hover:text-slate-100 hover:bg-transparent">
+        </div>
+        <div class="-mt-4">
+            <p class="text-white">Don't have an account? <a href="" class="font-bold">Register</a></p>
+        </div>
+    </form>
+</body>
+</html>
